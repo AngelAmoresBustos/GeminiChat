@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con API Gemini 2.5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/gemini-chat.css">
+</head>
+<body>
+
+    <div class="chat-container card">
+        <div class="chat-header card-header">
+            Chat con API de Gemini 2.5
+        </div>
+        <div id="chat-output" class="chat-area card-body">
+            <!-- Mensajes del chat se añadirán aquí -->
+            <div class="message bot-message">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+        </div>
+        <div class="chat-footer card-footer">
+            <div class="input-group">
+                <input type="text" id="user-input" class="form-control" placeholder="Escribe tu pregunta..." aria-label="Escribe tu pregunta">
+                <div class="input-group-append">
+                    <button id="send-button" class="btn btn-primary" type="button">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/gemini-chat.js"></script>
+</body>
+</html>

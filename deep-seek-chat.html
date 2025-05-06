@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat con DeepSeek en Local</title>
+    <link rel="stylesheet" href="css/deep-seek-chat.css">
+</head>
+<body>
+
+<button class="chat-toggle" onclick="toggleChat()">💬</button>
+
+<div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+        <h3 style="margin: 0;">Asistente Facturación</h3>
+        <button class="close-btn" onclick="toggleChat()">×</button>
+    </div>
+    
+    <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+            ¡Hola! Soy tu asistente de facturación electrónica. ¿En qué puedo ayudarte?
+        </div>
+    </div>
+
+    <div class="typing-indicator" id="typingIndicator">
+        El asistente está escribiendo...
+    </div>
+
+    <div class="input-container">
+        <input type="text" 
+                class="chat-input" 
+                placeholder="Escribe tu pregunta... y presiona Enter."
+                id="userInput"
+                onkeypress="handleKeyPress(event)">
+    </div>
+</div>
+
+<script src="js/deep-seek-chat.js"></script>
+
+</body>
+</html>

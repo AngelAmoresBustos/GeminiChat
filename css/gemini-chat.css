@@ -1,0 +1,79 @@
+        /* Estilos CSS */
+        body {
+            background-color: #f8f9fa; /* Fondo suave */
+        }
+        
+        .chat-container {
+            max-width: 700px; /* Ancho máximo del chat */
+            margin: 30px auto; /* Centrado */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            border-radius: 8px;
+            overflow: hidden; /* Para que el borde redondeado afecte al contenido */
+        }
+
+        .chat-header {
+            background-color: #007bff; /* Azul Bootstrap */
+            color: white;
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .chat-area {
+            height: 450px; /* Altura fija para el área de mensajes */
+            overflow-y: scroll; /* Scroll vertical si hay muchos mensajes */
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para los mensajes */
+            display: flex;
+            flex-direction: column; /* Apila los mensajes verticalmente */
+        }
+
+        .message {
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 15px; /* Bordes más redondeados */
+            max-width: 80%; /* Ancho máximo del mensaje */
+            line-height: 1.4;
+            word-wrap: break-word; /* Evita que palabras largas rompan el diseño */
+        }
+
+        .user-message {
+            background-color: #d1ecf1; /* Azul claro para usuario */
+            color: #0c5460;
+            align-self: flex-end; /* Alinea a la derecha */
+            border-bottom-right-radius: 5px; /* Estilo de burbuja */
+        }
+
+        .bot-message {
+            background-color: #e2e3e5; /* Gris claro para bot */
+            color: #383d41;
+            align-self: flex-start; /* Alinea a la izquierda */
+            border-bottom-left-radius: 5px; /* Estilo de burbuja */
+        }
+
+        .typing-indicator {
+            color: #6c757d;
+            font-style: italic;
+            padding: 5px 15px;
+            align-self: flex-start;
+        }
+
+        .chat-footer {
+            padding: 15px;
+            background-color: #f1f1f1; /* Fondo gris claro para el input */
+            border-top: 1px solid #ddd;
+        }
+
+        #user-input {
+            border-radius: 20px 0 0 20px; /* Bordes redondeados para el input */
+            border-right: none;
+        }
+
+        #send-button {
+            border-radius: 0 20px 20px 0; /* Bordes redondeados para el botón */
+        }
+        
+        #user-input:focus {
+            box-shadow: none; /* Quitar sombra de foco */
+            border-color: #ced4da;
+        }
