@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $prompt = trim($requestData['prompt']);
 
     $responseText = 'Lo siento, no pude obtener una respuesta válida.'; // Respuesta por defecto
-    $apiKey = 'AIzaSyDvE_TCVMZagLua2ej02EfDRDMD04ggfKk'; 
+    $apiKey = 'AQUI TU API KEY'; 
     $model = 'gemini-1.5-flash-latest'; 
     $server = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key={$apiKey}";
     // $prompt = "Hola como estas?"; 
